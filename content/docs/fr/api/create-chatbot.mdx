@@ -1,0 +1,97 @@
+---
+title: Créer un Chatbot
+description: Cette API vous permet de créer un nouveau Chatbot.
+---
+
+## Générez votre propre clé API
+
+La première chose à faire pour accéder à l'API d'Ollabot est de générer votre propre clé API. Vous pouvez générer votre clé API en suivant les étapes ici : [Générer une clé API](https://app.ollabot.com/docs/api).
+
+**Guide de l'API de Création**
+
+L'API de Création de Chatbot vous permet de créer un nouveau chatbot en faisant une requête POST à l'endpoint `/api/v1/create-chatbot`.
+Notez que vous ne pouvez créer qu'un seul chatbot par compte.
+
+## Endpoint
+
+**POST** https://app.ollabot.com/api/v1/create-chatbot
+
+## En-têtes de Requête
+
+La requête API doit inclure les en-têtes suivants :
+
+- **Authorization**: Bearer `<Your-Secret-Key>` - La clé secrète pour authentifier la requête API.
+- **Content-Type**: application/json - Le type de contenu de la charge utile de la requête.
+
+## Corps de la Requête
+
+Le corps de la requête doit contenir les paramètres suivants :
+
+- **name** (string, obligatoire) : Le nom du chatbot.
+- **description** (string, optionnel) : Une brève description du chatbot.
+
+### Exemple de Requête
+
+#### JavaScript
+
+```javascript
+const res = await fetch('https://app.ollabot.com/api/v1/create-chatbot', {
+  method: 'POST',
+  headers: {
+    Authorization: `Bearer <Your-Secret-Key>`,
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    name: 'example chatbot',
+    description: 'This is an example chatbot.'
+  })
+});
+
+const data = await res.json();
+
+console.log(data); // {chatbotId: 'exampleId-123'}
+```
+
+#### Python
+
+```python
+import requests
+
+url = 'https://app.ollabot.com/api/v1/create-chatbot'
+headers = {
+    'Authorization': 'Bearer <Your-Secret-Key>',
+    'Content-Type': 'application/json'
+}
+data = {
+    'name': 'example chatbot',
+    'description': 'This is an example chatbot.'
+}
+
+response = requests.post(url, json=data, headers=headers)
+print(response.json())
+```
+
+#### Shell
+
+```bash
+curl -X POST https://app.ollabot.com/api/v1/create-chatbot \
+  -H "Authorization: Bearer <Your-Secret-Key>" \
+  -H "Content-Type: application/json" \
+  -d '{"name": "example chatbot", "description": "This is an example chatbot."}'
+```
+
+## Réponse
+
+La réponse de l'API sera un objet JSON avec la structure suivante :
+
+```json
+{
+  "chatbotId": "exampleId-123"
+}
+```
+
+Le champ `chatbotId` dans la réponse contient l'identifiant unique attribué au chatbot créé.
+
+## Gestion des Erreurs
+
+En cas d'erreurs lors de la requête API, des codes de statut HTTP appropriés seront retournés avec des messages d'erreur dans le corps de la réponse. Assurez-vous de gérer ces erreurs de manière appropriée dans votre application.

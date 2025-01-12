@@ -1,0 +1,92 @@
+---
+title: Delete a Chatbot
+description: This API allows you to delete an existing Chatbot.
+---
+
+## Generate your own API Key
+
+The first thing you have to do to access Ollabot API, is by generating your own API Key. You can generate your API Key by following the steps here: [Generate API Key](https://app.ollabot.com/docs/api).
+
+
+**Delete API Guide**
+
+The Chatbot Deletion API allows you to delete an existing chatbot by making a DELETE request to the `/api/v1/delete-chatbot` endpoint.
+
+## Endpoint
+
+**DELETE** https://app.ollabot.com/api/v1/delete-chatbot
+
+## Request Headers
+
+The API request must include the following headers:
+
+- **Authorization**: Bearer `<Your-Secret-Key>` - The secret key for authenticating the API request.
+- **Content-Type**: application/json - The content type of the request payload.
+
+## Request Body
+
+The request body should contain the following parameter:
+
+- **botId** (string, required): The unique identifier of the chatbot to be deleted.
+
+### Example Request
+
+#### JavaScript
+
+```javascript
+const res = await fetch('https://app.ollabot.com/api/v1/delete-chatbot', {
+  method: 'DELETE',
+  headers: {
+    Authorization: `Bearer <Your-Secret-Key>`,
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    botId: 'exampleId-123'
+  })
+});
+
+const data = await res.json();
+
+console.log(data); // { message: 'Chatbot deleted successfully' }
+```
+
+#### Python
+
+```python
+import requests
+
+url = 'https://app.ollabot.com/api/v1/delete-chatbot'
+headers = {
+    'Authorization': 'Bearer <Your-Secret-Key>',
+    'Content-Type': 'application/json'
+}
+data = {
+    'botId': 'exampleId-123'
+}
+
+response = requests.delete(url, json=data, headers=headers)
+print(response.json())
+```
+
+#### Shell
+
+```bash
+curl -X DELETE https://app.ollabot.com/api/v1/delete-chatbot \
+  -H "Authorization: Bearer <Your-Secret-Key>" \
+  -H "Content-Type: application/json" \
+  -d '{"botId": "exampleId-123"}'
+```
+
+## Response
+
+The API response will be a JSON object with the following structure:
+
+```json
+{
+  "message": "Chatbot deleted successfully"
+}
+```
+
+## Error Handling
+
+If there are any errors during the API request, appropriate HTTP status codes will be returned along with error messages in the response body. Make sure to handle these errors gracefully in your application.

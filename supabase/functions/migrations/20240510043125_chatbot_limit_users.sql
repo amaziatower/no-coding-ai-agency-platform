@@ -1,0 +1,5 @@
+ALTER TABLE users
+ADD COLUMN chatbot_limit INTEGER DEFAULT 1;
+
+ALTER TABLE chatbots
+ALTER COLUMN id SET DATA TYPE UUID USING (uuid_generate_v4());

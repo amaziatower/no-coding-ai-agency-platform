@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML Theme</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 20px 0;
+        }
+        ul, ol, menu {
+            margin-left: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        ul li, ol li, menu li {
+            margin: 10px 0;
+            padding: 5px;
+        }
+        ul li {
+            list-style-type: disc;
+            color: #007BFF;
+        }
+        ol li {
+            list-style-type: decimal;
+            color: #FF5733;
+        }
+        menu li {
+            list-style-type: square;
+            color: #28A745;
+        }
+        ul.fancy-list li:before {
+            content: "\f00c";
+            font-family: 'FontAwesome';
+            margin-right: 10px;
+            color: #007BFF;
+        }
+        ol.fancy-list li:before {
+            content: "\f058";
+            font-family: 'FontAwesome';
+            margin-right: 10px;
+            color: #FF5733;
+        }
+        menu.fancy-list li:before {
+            content: "\f00d";
+            font-family: 'FontAwesome';
+            margin-right: 10px;
+            color: #28A745;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test Page</h1>
+    <h2>Unordered List</h2>
+    <ul class="fancy-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol class="fancy-list">
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+    <h2>Menu List</h2>
+    <menu class="fancy-list">
+        <li>Menu Item 1</li>
+        <li>Menu Item 2</li>
+        <li>Menu Item 3</li>
+    </menu>
+    <script>
+        const localScriptUrl = "http://localhost:3000";
+        const prodScriptUrl = "https://ollabot-frontend-nine.vercel.app"
+        window.embeddedChatbotConfig = {
+            domain: prodScriptUrl,
+            // domain: prodScriptUrl,
+            botId: "90a888e6-806f-48d4-91a4-c37cbde41653",
+        };
+    </script>
+    <!-- <script src="http://localhost:3000/scripts/embed.min.js"></script> -->
+    <script src="https://app.ollabot.com/scripts/embed.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "locale": {
+    "en": {
+      "monthlyPrice": "$49",
+      "yearlyPrice": "$490",
+      "features": [
+        "7000 questions answered per mo.",
+        "4 Data Sources",
+        "Community Support",
+        "Analytics and Insight Dashboard"
+      ]
+    },
+    "fr": {
+      "monthlyPrice": "49€",
+      "yearlyPrice": "490€",
+      "features": [
+        "7000 questions répondus par mois",
+        "4 sources de données",
+        "Support communautaire",
+        "Tableau de bord d'analyses et d'insights"
+      ]
+    }
+  }
+}

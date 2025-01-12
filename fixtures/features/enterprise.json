@@ -1,0 +1,32 @@
+{
+  "locale": {
+    "en": {
+      "monthlyPrice": "$399",
+      "yearlyPrice": "$3990",
+      "features": [
+        "45 000 questions answered per mo.",
+        "4 Data Sources",
+        "Community Support",
+        "Analytics and Insight Dashboard",
+        "Premium Email Support",
+        "Real-time update from data aource",
+        "API Access",
+        "Remove 'Powered by Bot Generator'"
+      ]
+    },
+    "fr": {
+      "monthlyPrice": "399€",
+      "yearlyPrice": "3990€",
+      "features": [
+        "45 000 questions répondus par mois",
+        "4 sources de données",
+        "Support communautaire",
+        "Tableau de bord d'analyses et d'insights",
+        "Support par e-mail premium",
+        "Mise à jour en temps réel de la source de données",
+        "Accès API",
+        "Retirer 'Powered by Bot Generator'"
+      ]
+    }
+  }
+}

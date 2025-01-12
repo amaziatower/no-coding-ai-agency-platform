@@ -1,0 +1,175 @@
+{
+  "_meta": {
+    "template_version": 0
+  },
+  "fixtures": [
+    {
+      "name": "prod_starter",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "Starter",
+        "description": "Access to 100 questions per month and 2 data sources with community support.",
+        "metadata": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "name": "price_starter_month",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_starter:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 1900,
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "price_starter_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_starter:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 19000,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "prod_pro",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "Pro",
+        "description": "Access to 250 questions per month, 4 data sources, community support, and an analytics dashboard.",
+        "metadata": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "name": "price_pro_month",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_pro:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 4900,
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "price_pro_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_pro:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 49000,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "prod_unlimited",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "Unlimited",
+        "description": "Access to 500 questions per month, 4 data sources, premium email support, API access, and real-time updates.",
+        "metadata": {
+          "index": 2
+        }
+      }
+    },
+    {
+      "name": "price_unlimited_month",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_unlimited:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 9900,
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "price_unlimited_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_unlimited:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 99000,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "prod_enterprise",
+      "path": "/v1/products",
+      "method": "post",
+      "params": {
+        "name": "Enterprise",
+        "description": "Enterprise-level service offering 500 questions per month, API access, premium support, and custom branding options.",
+        "metadata": {
+          "index": 3
+        }
+      }
+    },
+    {
+      "name": "price_enterprise_month",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_enterprise:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 39900,
+        "recurring": {
+          "interval": "month",
+          "interval_count": 1
+        }
+      }
+    },
+    {
+      "name": "price_enterprise_year",
+      "path": "/v1/prices",
+      "method": "post",
+      "params": {
+        "product": "${prod_enterprise:id}",
+        "currency": "usd",
+        "billing_scheme": "per_unit",
+        "unit_amount": 399000,
+        "recurring": {
+          "interval": "year",
+          "interval_count": 1
+        }
+      }
+    }
+  ]
+}

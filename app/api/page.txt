@@ -1,0 +1,33 @@
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
+import PageLayout from 'components/PageLayout';
+import VideoPlayer from "components/video-player"
+
+type Props = {
+  params: {locale: string};
+};
+
+export default function IndexPage({params: {locale}}: Props) {
+  // Enable static rendering
+  unstable_setRequestLocale(locale);
+
+  const t = useTranslations('IndexPage');
+
+  return (
+    <>
+      <section className="container space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+            <h1 className="font-heading sm:text-2xl md:text-3xl lg:text-4xl">
+              Elevate Your Sales WIth Our AI Sales Assistant
+            </h1>
+            <p className="sm:text-md max-w-[48rem] font-semibold leading-normal text-muted-foreground sm:leading-8">
+              Bot Generator, your AI-powered digital sales associate, enhances
+              your online store&apos;s performance and customer satisfaction
+              across all chat channels.
+            </p>
+            <VideoPlayer />
+          </div>
+      </section>
+    </>
+  );
+}

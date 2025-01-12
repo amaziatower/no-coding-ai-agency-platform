@@ -1,0 +1,112 @@
+---
+title: Insérer ou Mettre à Jour des Documents
+description: Cette API vous permet d'insérer ou de mettre à jour des documents dans l'espace de noms d'un chatbot spécifique.
+---
+
+## Générez votre propre clé API
+
+La première chose à faire pour accéder à l'API d'Ollabot est de générer votre propre clé API. Vous pouvez générer votre clé API en suivant les étapes ici : [Générer une clé API](https://app.ollabot.com/docs/api).
+
+**Guide de l'API d'Insertion ou de Mise à Jour des Documents**
+
+L'API d'Insertion ou de Mise à Jour des Documents vous permet de télécharger et de traiter des documents en faisant une requête POST à l'endpoint `/api/v1/upsert-docs` en utilisant la clé API de l'utilisateur.
+
+## Endpoint
+
+**POST** https://app.ollabot.com/api/v1/upsert-docs
+
+## En-têtes de Requête
+
+La requête API doit inclure les en-têtes suivants :
+
+- **Authorization**: Bearer `<Your-Secret-Key>` - La clé API de l'utilisateur pour authentifier la requête.
+- **Content-Type**: multipart/form-data - Le type de contenu de la charge utile de la requête.
+
+## Paramètres
+
+Le corps de la requête doit contenir les paramètres suivants :
+
+- **files** (array of file, obligatoire) : La liste des fichiers à télécharger. Maximum de 3 fichiers autorisés.
+- **use_metadata** (boolean, optionnel) : Indique si les extracteurs de métadonnées doivent être utilisés. Par défaut, `False`.
+- **namespace** (string, optionnel) : L'espace de noms auquel les documents appartiennent. Si non fourni, le `botId` sera utilisé comme espace de noms.
+- **botId** (string, obligatoire) : L'identifiant unique du chatbot.
+
+### Exemple de Requête
+
+#### JavaScript
+
+```javascript
+const formData = new FormData();
+formData.append('botId', 'exampleBotId');
+formData.append('files', fileInput1.files[0]);
+formData.append('files', fileInput2.files[0]);
+formData.append('files', fileInput3.files[0]);
+formData.append('use_metadata', true);
+
+const res = await fetch('https://app.ollabot.com
+
+/api/v1/upsert-docs', {
+  method: 'POST',
+  headers: {
+    Authorization: `Bearer <Your-Secret-Key>`,
+  },
+  body: formData,
+});
+
+const data = await res.json();
+console.log(data);
+```
+
+#### Python
+
+```python
+import requests
+
+url = 'https://app.ollabot.com/api/v1/upsert-docs'
+headers = {
+    'Authorization': 'Bearer <Your-Secret-Key>',
+}
+files = {
+    'files': [
+        ('files', open('path/to/file1.pdf', 'rb')),
+        ('files', open('path/to/file2.pdf', 'rb')),
+        ('files', open('path/to/file3.pdf', 'rb'))
+    ]
+}
+data = {
+    'botId': 'exampleBotId',
+    'use_metadata': 'true'
+}
+
+response = requests.post(url, headers=headers, files=files, data=data)
+print(response.json())
+```
+
+#### Shell
+
+```bash
+curl -X POST https://app.ollabot.com/api/v1/upsert-docs \
+  -H "Authorization: Bearer <Your-Secret-Key>" \
+  -F "botId=exampleBotId" \
+  -F "files=@path/to/file1.pdf" \
+  -F "files=@path/to/file2.pdf" \
+  -F "files=@path/to/file3.pdf" \
+  -F "use_metadata=true"
+```
+
+## Réponse
+
+La réponse de l'API sera un objet JSON avec la structure suivante :
+
+```json
+{
+  "status": 200,
+  "message": "Files processed successfully! X nodes upserted to Pinecone Index Name: your-index and Pinecone Namespace: exampleBotId."
+}
+```
+
+Le champ `message` dans la réponse contient des détails sur le statut de traitement et le nombre de nœuds insérés ou mis à jour dans l'index et l'espace de noms Pinecone.
+
+## Gestion des Erreurs
+
+En cas d'erreurs lors de la requête API, des codes de statut HTTP appropriés seront retournés avec des messages d'erreur dans le corps de la réponse. Assurez-vous de gérer ces erreurs de manière appropriée dans votre application.

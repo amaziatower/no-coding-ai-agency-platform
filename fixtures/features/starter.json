@@ -1,0 +1,22 @@
+{
+  "locale": {
+    "en": {
+      "monthlyPrice": "$19",
+      "yearlyPrice": "$190",
+      "features": [
+        "3000 questions answered per mo.",
+        "2 Data Sources",
+        "Community Support"
+      ]
+    },
+    "fr": {
+      "monthlyPrice": "19€",
+      "yearlyPrice": "190€",
+      "features": [
+        "3000 questions répondus par mois",
+        "2 sources de données",
+        "Support communautaire"
+      ]
+    }
+  }
+}

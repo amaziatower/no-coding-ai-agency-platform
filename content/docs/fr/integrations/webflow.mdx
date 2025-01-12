@@ -1,0 +1,118 @@
+---
+title: Guide d'intégration Webflow
+description: Guide détaillé pour intégrer le chatbot Ollabot sur votre site Web Webflow.
+---
+
+## Étape 1: Connectez-vous à Ollabot et Configurez Votre Chatbot
+
+Pour ajouter un chatbot Ollabot à votre site Shopify, connectez-vous à votre compte Ollabot pour créer et configurer un chatbot. Si vous n'avez pas de compte Ollabot, vous pouvez commencer par en créer un gratuitement. Si vous n'êtes pas sûr de savoir comment créer un chatbot, voici un guide détaillé sur la création d'un chatbot sur Ollabot.
+
+## Étape 2: Générer et Copier le Code d'Intégration de Votre Chatbot O
+
+llabot
+
+1. Une fois votre chatbot configuré sur Ollabot, accédez à votre tableau de bord et sélectionnez le chatbot que vous souhaitez intégrer à votre site Shopify.
+
+<Image src="/images/integrations/dashboard.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+2. Sur la page de prévisualisation du chatbot, cliquez sur l'onglet "Intégrer sur le Site". Vous verrez une fenêtre contextuelle avec le code HTML d'intégration. Cliquez sur "Copier le Script" pour copier le code.
+
+<Image src="/images/integrations/embed.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+## Étape 2 : Copiez le code d'intégration de votre chatbot
+
+Une fois que vous avez configuré et testé votre bot Ollabot, vous aurez besoin du code d'intégration pour afficher le widget du bot sur votre site Web. Pour ce faire :
+
+1. Accédez au tableau de bord de votre compte Ollabot.
+
+2. Vous devriez voir votre chatbot, cliquez sur le chatbot que vous souhaitez intégrer sur votre site Web Webflow, vous devriez être dirigé vers la page de prévisualisation du chatbot.
+
+<Image src="/images/integrations/dashboard.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+3. Sur la page de prévisualisation du chatbot, cliquez sur l'onglet "Intégrer", vous devriez voir la page d'intégration. Cliquez sur "Copier le script" pour copier le code HTML fourni depuis cette fenêtre.
+
+<Image src="/images/integrations/embed.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+## Étape 3 : Configurez un conteneur pour afficher le widget de votre chatbot
+
+Avant d'ajouter le code d'intégration sur votre site Web Webflow, vous devez créer un conteneur pour afficher le widget. Cela garantira que le widget s'affiche correctement sur votre site Web sans occuper toute la largeur de la page.
+
+1. Pour créer un conteneur, connectez-vous à votre compte Webflow et accédez à votre tableau de bord Webflow.
+
+2. Sur votre tableau de bord Webflow, vous trouverez une liste de tous vos projets de site Web. Passez votre souris sur le site Web sur lequel vous souhaitez ajouter le chatbot et cliquez sur "Ouvrir le concepteur".
+
+<Image src="/images/integrations/weblow-designer.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+3. Sur la page du concepteur, cliquez sur l'icône de fichier (Pages) dans le coin supérieur gauche du concepteur de site Web Webflow et sélectionnez la page sur laquelle vous souhaitez intégrer le chatbot.
+
+<Image src="/images/integrations/weblow-pages.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+4. Une fois la page sélectionnée, cliquez sur le bouton Plus (Ajouter des éléments) dans le coin supérieur gauche de l'écran du concepteur et une liste d'éléments disponibles devrait apparaître.
+
+5. Faites glisser l'élément Section à l'endroit de la page où vous souhaitez intégrer votre chatbot.
+
+6. Faites glisser un élément Container sur la Section.
+
+7. Faites glisser un élément Div dans le Container et définissez la taille du Div pour que le chatbot soit contenu à l'intérieur et ne s'étende pas sur toute la largeur de la page.
+
+<Image src="/images/integrations/weblow-code.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+8. Faites défiler la liste d'éléments et faites glisser l'élément Embed dans le Div que vous avez ajouté sur le canevas Webflow.
+
+<Image src="/images/integrations/weblow-embed.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+9. Sélectionnez et double-cliquez sur l'élément Embed pour ouvrir l'éditeur de code HTML Embed.
+
+10. Collez le code d'intégration du chatbot Ollabot de l'étape 2 ci-dessus et cliquez sur "Enregistrer et fermer".
+
+<Image src="/images/integrations/weblow-embed.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+Si tout se passe bien, vous devriez voir un aperçu du chatbot sur la prévisualisation en direct de votre site Web Webflow sous forme de composant popover.
+
+<Image src="/images/integrations/weblow-chat.png" 
+  width="718" 
+  height="404" 
+  alt="Image" 
+/>
+
+Après avoir suivi ces étapes, votre chatbot devrait être prêt à servir les visiteurs de votre site Web !
+
+Si vous rencontrez des difficultés pour gérer les dimensions de votre Embed et de l'élément chatbot, c'est un problème courant. Les composants Webflow nécessitent un peu d'adaptation. Vous pouvez consulter la documentation officielle de Webflow sur l'élément Embed pour en savoir plus sur l'intégration d'un outil tiers comme le chatbot Ollabot sur un site Web Webflow.
+
+**Note**: Vous pouvez personnaliser l'apparence et les couleurs de votre chatbot sur votre tableau de bord Ollabot. Pour ce faire, accédez à votre tableau de bord, choisissez un bot, cliquez sur l'onglet "Paramètres" en haut de la page, puis cliquez sur "Interface de chat" dans la barre latérale gauche pour afficher les options de personnalisation du chatbot.

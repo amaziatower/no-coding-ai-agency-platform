@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Embedded Script</title>
+</head>
+<body>
+    <h1>Test Embedded Script</h1>
+    <p>This is a test page to embed a configurable script.</p>
+    
+    <div id="embedded-component"></div>
+    
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "GS_JWzBuhp1tAu8ez9-WB",
+            domain: "localhost:3000"
+        };
+    </script>
+    <script src="http://localhost:3000/scripts/embed-component.min.js" defer></script>
+</body>
+</html>

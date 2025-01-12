@@ -1,0 +1,292 @@
+{
+  "IndexPage": {
+    "headerTitle": "Streamline Your Business with Chatbots and Automation",
+    "headerDescription": "Boost Customer Engagement and Drive Sales with AI-Powered Chatbots and Automation Solutions",
+    "headerButton": "Get Started!",
+    "headerSubDescription": "AI AUTOMATION AGENCY AND CHATBOT",
+    "title": "Elevate Your Sales WIth Our AI Sales Assistant",
+    "description": "Ollabot, your AI-powered digital sales associate, enhances your online store's performance and customer satisfaction across all chat channels.",
+    "sub-description": "AI-Powered Sales Assistant for Your Online Store",
+    "tryit": "Join Now",
+    "stat1": "Instant Resolution of Support Queries",
+    "stat2": "Boost Your Monthly Revenue Significantly",
+    "stat3": "Connect with More Potential Clients",
+    "stat4": "24/7 Uninterrupted Support",
+    "features1-title": "Smart Automation with AI Assistants",
+    "features1-text": "Save time with seamless handling of order tracking, cancellations, refunds, and complete workflow management from start to finish.",
+    "features2-title": "Human-like Support Across Multiple Channels",
+    "features2-text": "Seamlessly connect with all your chat channels, including CRMs, Instagram DMs, email, and more, for streamlined communication",
+    "features3-title": "Enhanced Human-Like Interaction Experience",
+    "features3-text": "Experience the comfort and ease of interacting with a helpful sales associate, reminiscent of physical stores, not just a traditional text chatbot.",
+    "platforms": "Integration with Your Preferred Platforms",
+    "lang": "en",
+    "pricing-title": "Don't Miss Out on the Exceptional and Tailored Experience Offered by Your Sales Assistant!",
+    "pricing-description": "Begin Crafting Your Custom AI Assistant with Ollabot and Gain Access to the Information You Require, Anytime, Anywhere.",
+    "HowItWorks": "How It Works",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "subscribe": "Subscribe"
+  },
+  "HowItWorks": {
+    "title": "Customize Your Al Assistant: Share Your Specific Needs",
+    "description": "Select the Method for Your Al to Learn and Align with Your Business.",
+    "subtitle": "Empower Your Al Assistant with Your Knowledge",
+    "subdescription": "Choose How You Want Your Al Assistant to Learn About Your Business.",
+    "title2": "Al Assistant Learns from Your Business",
+    "description2": "",
+    "subtitle2": "",
+    "subdescription2": "Your Al Assistant Utilizes the Content from the Sources You Provide to Learn About Your Business.",
+    "title3": "Implement and Share Your Customized Al Assistant",
+    "description3": "Select the Method for Your Al to Learn and Align with Your Business.",
+    "subtitle3": "Integrate Your Al Assistant Across Chat Channels",
+    "subdescription3": "Your Al Assistant Seamlessly Delivers Personalized Shopping Guidance, Resolves Support Queries, and Streamlines Customer Checkout on Every Chat Channel."
+  },
+  "Blog": {
+    "title": "Blog",
+    "description": "AI Insights Hub: Keep Up with the Newest Advancements",
+    "lang": "en",
+    "nothing": "Nothing to see here yet."
+  },
+  "PathnamesPage": {
+    "title": "Pathnames",
+    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+  },
+  "DashboardPage": {
+    "heading": "Bot Dashboard",
+    "text": "Create and manage bots.",
+    "noBots": "No bots created",
+    "noBotsDescription": "You don't have any bots yet. Start by creating your first bot."
+  },
+  "BotItem": {
+    "copied": "Copied!",
+    "botId": "Bot ID",
+    "dataSources": "Data Sources",
+    "messages": "Messages",
+    "customize": "Customize"
+  },
+  "AccountPage": {
+    "title": "Account",
+    "description": "We partnered with Stripe for a simplified billing."
+  },
+  "CustomerPortalForm": {
+    "description": "You are currently on the",
+    "footer": "Choose your plan",
+    "title": "Your Plan",
+    "manageSubscription": "Manage your subscription on Stripe.",
+    "openCustomerPortal": "Open customer portal"
+  },
+  "EmailForm": {
+    "description": "Please enter the email address you want to use to login.",
+    "footer": "We will email you to verify the change.",
+    "title": "Your Email",
+    "updateEmail": "Update Email"
+  },
+  "ApiKeyForm": {
+    "description": "Manage your API key here. You can generate a new key or delete the existing one.",
+    "title": "API Key Management",
+    "generateKey": "Generate API Key",
+    "deleteKey": "Delete API Key",
+    "keyGenerated": "API key generated successfully.",
+    "keyDeleted": "API key deleted successfully.",
+    "loading": "Loading..."
+  },
+  "DeleteAccountForm": {
+    "description": "This action cannot be undone. This will permanently delete your account.",
+    "footer": "Please confirm to proceed with account deletion.",
+    "title": "Delete Account",
+    "deleteAccount": "Delete Account",
+    "typeToConfirm": "Type 'Delete Account' to confirm",
+    "accountDeleted": "Account deleted successfully!",
+    "errorOccured": "An unexpected error occurred"
+  },
+  "EmbedPage": {
+    "heading": "Embed the Chatbot",
+    "text": "Instructions to embed the chatbot on your website.",
+    "embedScriptTitle": "Embed with Script",
+    "embedScriptDescription": "To add a chat bubble at the bottom right of your website, add this script tag to your HTML",
+    "embedTelegramDescription": "To add telegram chat bot, input your telegram bot token and click start button. ",
+    "start": "Start",
+    "embedTelegramPlaceholder": "Input your telegram bot token",
+    "copied": "Copied!",
+    "copyScript": "Copy Script",
+    "embedIframeTitle": "Embed with Iframe",
+    "embedIframeDescription": "To embed the chatbot in a specific location on your website, add this iframe tag to your HTML",
+    "copyIframe": "Copy Iframe"
+  },
+  "AnalyticsPage": {
+    "title": "Chatbot Dashboard",
+    "description": "Interaction Overview for the Last 30 Days",
+    "questionsAsked": "Questions Asked",
+    "lastUpdated": "Last updated at"
+  },
+  "KnowledgePage": {
+    "title": "Upload Knowledge",
+    "description": "Upload your documents, CSV, or links to train your bot.",
+    "documents": "Documents",
+    "csv": "CSV",
+    "links": "Links",
+    "uploadAndTrain": "Upload and Train",
+    "buttonloading": "Upserting files...",
+    "loading": "Your knowledge base is being updated, please do not leave the page and wait for the file to upload...",
+    "successLinks": "Success! Links upserted. Please wait a minute for the changes to reflect.",
+    "successDocuments": "Success! Documents upserted. Please wait a minute for the changes to reflect.",
+    "scrapingLinks": "Scraping links...",
+    "scrapingError": "Error scraping links.",
+    "errorProcessingLinks": "Error processing links.",
+    "errorProcessingFiles": "Error processing files.",
+    "tooltip": "## Quick Tips for Managing Your Chatbot's Knowledge Base\n\n**Real-time Updates**: Adding files and links immediately enhances your bot's knowledge.\n\n### Key Steps\n1. **Upload Files**: Go to the Knowledge Base section and upload DOC, MD, CSV, or TXT files.\n2. **Add Links**: Input URLs to add web content to your bot's knowledge base. You can crawl multiple links, with a limit of 50 links.\n3. **Update Regularly**: Keep your knowledge base accurate by regularly adding and updating sources.\n\n**Note**: Please wait for 3-5 minutes depending on the scale of your files/links before the changes can be seen in your chatbot in the Customization panel.\n\n**Warning**: You can reset your knowledge base through the reset panel. Be careful as this action cannot be undone.\n\nRead more in our guide [here](https://app.ollabot.com/docs/bot-dashboard/knowledge).",
+    "resetKnowledgeBase": "Reset",
+    "typeToConfirm": "Type 'Reset' to confirm",
+    "errorOccured": "An error occurred.",
+    "successMessage": "Knowledge base reset successfully!",
+    "footer": "Are you sure you want to reset your knowledge base?",
+    "reset": "Reset",
+    "resetKnowledgeBaseDescription": "This action will reset your knowledge base. This cannot be undone."
+  },
+  "LinkCard": {
+    "title": "Website",
+    "description": "Start crawling from the given URL to gather all associated links (excluding files).",
+    "fetchLinks": "Fetch more links",
+    "includedLinks": "Included Links",
+    "deleteAll": "Delete all",
+    "addLink": "Add new link",
+    "placeholder": "Enter your link",
+    "noLinks": "No links scraped yet.",
+    "gatherLinks": "This will gather all links starting from the provided URL, ignoring any file links on the site.",
+    "scrapingLinks": "Scraping links...",
+    "scrapingError": "Error scraping links.",
+    "successLinks": "Success! Links upserted. Please wait a minute for the changes to reflect."
+  },
+  "Dropzone": {
+    "releaseToUpload": "Release to upload",
+    "dragFilesToUpload": "Drag Files to Upload or",
+    "clickHere": "Click Here",
+    "supportedFiles": "We support only certain file types up to a maximum size. Drag and drop your file in one go.",
+    "fileLimitError": "Please limit file uploads to a certain number of files.",
+    "dataLimitError": "Total file size limit exceeded. Maximum allowed size is enforced.",
+    "invalidFileType": "Invalid file type. Expected certain file types.",
+    "allFiles": "all"
+  },
+  "SettingsPage": {
+    "heading": "Customization",
+    "text": "Customize your chatbot settings.",
+    "lang": "en",
+    "saveChanges": "Save Changes",
+    "savingChanges": "Saving Changes...",
+    "reset": "Reset",
+    "botNameLabel": "Bot Name",
+    "botNamePlaceholder": "Supabot",
+    "companyNameLabel": "Company Name",
+    "companyNamePlaceholder": "Ollabot",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Enter a description for your bot here...",
+    "toneLabel": "Tone",
+    "tonePlaceholder": "Select tone",
+    "temperatureLabel": "Creativity",
+    "temperaturePlaceholder": "0.7",
+    "companyLogoLabel": "Company Logo",
+    "botAvatarLabel": "Bot Avatar",
+    "chatBubbleIconLabel": "Chat Bubble Icon",
+    "bgColorLabel": "Accent color",
+    "welcomeMessageLabel": "Welcome Message",
+    "includeWatermarkLabel": "Include Watermark",
+    "forUnlimitedUsersOnly": "For Pro Users Only",
+    "errorFetchingData": "Error fetching data",
+    "settingsUpdating": "Your settings are being updated, please wait for the file to upload...",
+    "settingsUpdatedSuccessfully": "Settings updated successfully!",
+    "errorUpdatingSettings": "Error updating settings",
+    "optional": "(Optional)",
+    "cancel": "Cancel",
+    "editChatbotSettings": "Edit Chatbot Settings",
+    "tooltip": "## Quick Tips for Customizing Your Chatbot\n\n**Real-time Updates**: Changes to **Bot Name**, **Company Name**, **Company Logo**, and **Avatar Logo** update immediately.\n\n### Key Customization Elements\n1. **Company Logo**: Upload a logo for branding.\n2. **Company Name**: Display your company name for identification.\n3. **Bot Name**: Choose a name representing your brand.\n4. **Avatar Logo**: Set an image for the chatbot's avatar.\n\n### Chatbot Settings\n1. **Description**: Provide an overview of the chatbot's role. Include specific instructions for better accuracy.\n2. **Welcome Message**: Set an initial message for users.\n3. **Creativity**: Control response creativity (0 to 1).\n4. **Tone**: Define the chatbot's personality (e.g., Professional, Casual).\n\n### Save Changes\n- Click **Save Changes** and refresh to apply.\n\n### Test Your Chatbot\n- Interact with the chatbot to see real-time changes.\n\n\n\nRead more in our guide [here](https://app.ollabot.com/docs/bot-dashboard/customization).",
+    "settingsResetSuccessfully": "Settings reset successfully",
+    "errorResettingSettings": "Error resetting settings",
+    "resetConfirmationTitle": "Confirm Reset",
+    "resetConfirmationDescription": "This action will reset your knowledge base. This cannot be undone.",
+    "typeToConfirm": "Type 'reset' to confirm",
+    "confirmReset": "Confirm Reset",
+    "resetting": "Resetting...",
+    "errorResetConfirmation": "Please type 'reset' to confirm"
+  },
+  "DeleteChatbotPage": {
+    "description": "Please confirm the deletion of your chatbot by typing the confirmation text and providing the chatbot ID.",
+    "footer": "This action cannot be undone.",
+    "title": "Delete Chatbot",
+    "deleteChatbot": "Delete Chatbot",
+    "typeToConfirm": "Type 'Delete Chatbot' to confirm",
+    "errorOccured": "An error occurred. Please try again."
+  },
+  "IntegrationsPage": {
+    "searchPlaceholder": "Search integrations...",
+    "viewButton": "View",
+    "bubble": {
+      "name": "Bubble",
+      "description": "Embed the Ollabot Chatbot Assistant in your Bubble applications for enhanced user interactions and support."
+    },
+    "framer": {
+      "name": "Framer",
+      "description": "Integrate the Ollabot Chatbot Assistant within your Framer projects to provide real-time assistance and engagement."
+    },
+    "shopify": {
+      "name": "Shopify",
+      "description": "Enhance your Shopify store by embedding the Ollabot Chatbot Assistant for customer support and sales inquiries."
+    },
+    "webflow": {
+      "name": "Webflow",
+      "description": "Seamlessly add the Ollabot Chatbot Assistant to your Webflow sites to assist visitors and improve user experience."
+    },
+    "weebly": {
+      "name": "Weebly",
+      "description": "Integrate the Ollabot Chatbot Assistant with your Weebly site to provide instant support and engagement for visitors."
+    },
+    "wix": {
+      "name": "Wix",
+      "description": "Add the Ollabot Chatbot Assistant to your Wix website for enhanced customer interaction and support."
+    },
+    "wordpress": {
+      "name": "WordPress",
+      "description": "Embed the Ollabot Chatbot Assistant in your WordPress site for seamless user support and engagement."
+    }
+  },
+  "Loading": {
+    "heading": "Bots",
+    "text": "Create and manage your bots."
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "toast": {
+    "accountDeleted": "Account deleted successfully!",
+    "errorOccurred": "An error occurred."
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+  },
+  "LocaleLayout": {
+    "title": "App - Ollabot"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {🇺🇸 En} fr {🇫🇷 Fr} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "pathnames": "Pathnames"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "title": "Docs",
+        "description": "Learn more about next-intl in the official docs.",
+        "href": "https://next-intl-docs.vercel.app/"
+      },
+      "source": {
+        "title": "Source code",
+        "description": "Browse the source code of this example on GitHub.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+
+    "paths": {
+      "@/*": ["./*"],
+      "@site/content": ["/.velite"]
+    },
+    "strict": false
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "public/scriptsols/embed.min.js",
+    "public/scriptsols/embed.js",
+    "public/**/*.css",
+    "./.velite",   
+    "content/docs/api/chat.mdx", 
+    "content/docs/api/create-chatbot.mdx"  ],
+  "exclude": ["node_modules", "copilot"]
+}

@@ -1,0 +1,111 @@
+---
+title: Upsert Documents
+description: This API allows you to upsert documents to a specific chatbot's namespace.
+---
+
+## Generate your own API Key
+
+The first thing you have to do to access Ollabot API, is by generating your own API Key. You can generate your API Key by following the steps here: [Generate API Key](https://app.ollabot.com/docs/api).
+
+**Upsert Documents API Guide**
+
+The Upsert Documents API allows you to upload and process documents by making a POST request to the `/api/v1/upsert-docs` endpoint using the user's API key.
+
+## Endpoint
+
+**POST** https://app.ollabot.com/api/v1/upsert-docs
+
+## Request Headers
+
+The API request must include the following headers:
+
+- **Authorization**: Bearer `<Your-Secret-Key>` - The user's API key for authenticating the request.
+- **Content-Type**: multipart/form-data - The content type of the request payload.
+
+## Parameters
+
+The request body should contain the following parameters:
+
+- **files** (array of file, required): The list of files to be uploaded. Maximum of 3 files allowed.
+- **use_metadata** (boolean, optional): Indicates if metadata extractors should be used. Default is `False`.
+- **namespace** (string, optional): The namespace to which the documents belong. If not provided, the `botId` will be used as the namespace.
+- **botId** (string, required): The unique identifier of the chatbot.
+
+### Example Request
+
+#### JavaScript
+
+```javascript
+const formData = new FormData();
+formData.append('botId', 'exampleBotId');
+formData.append('files', fileInput1.files[0]);
+formData.append('files', fileInput2.files[0]);
+formData.append('files', fileInput3.files[0]);
+formData.append('use_metadata', true);
+
+const res = await fetch('https://app.ollabot.com/api/v1/upsert-docs', {
+  method: 'POST',
+  headers: {
+    Authorization: `Bearer <Your-Secret-Key>`,
+  },
+  body: formData,
+});
+
+const data = await res.json();
+console.log(data);
+```
+
+#### Python
+
+```python
+import requests
+
+url = 'https://app.ollabot.com/api/v1/upsert-docs'
+headers = {
+    'Authorization': 'Bearer <Your-Secret-Key>',
+}
+files = {
+    'files': [
+        ('files', open('path/to/file1.pdf', 'rb')),
+        ('files', open('path/to/file2.pdf', 'rb')),
+        ('files', open('path/to/file3.pdf', 'rb'))
+    ]
+}
+data = {
+    'botId': 'exampleBotId',
+    'use_metadata': 'true'
+}
+
+response = requests.post(url, headers=headers, files=files, data=data)
+print(response.json())
+```
+
+#### Shell
+
+```bash
+curl -X POST https://app.ollabot.com/api/v1/upsert-docs \
+  -H "Authorization: Bearer <Your-Secret-Key>" \
+  -F "botId=exampleBotId" \
+  -F "files=@path/to/file1.pdf" \
+  -F "files=@path/to/file2.pdf" \
+  -F "files=@path/to/file3.pdf" \
+  -F "use_metadata=true"
+```
+
+## Response
+
+The API response will be a JSON object with the following structure:
+
+```json
+{
+  "status": 200,
+  "message": "Files processed successfully! X nodes upserted to Pinecone Index Name: your-index and Pinecone Namespace: exampleBotId."
+}
+```
+
+The `message` field in the response contains details about the processing status and the number of nodes upserted to the Pinecone index and namespace.
+
+## Error Handling
+
+If there are any errors during the API request, appropriate HTTP status codes will be returned along with error messages in the response body. Make sure to handle these errors gracefully in your application.
+
